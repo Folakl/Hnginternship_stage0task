@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stage 0</title>
+        <link rel="stylesheet" href="./style.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body style="display: flex; justify-content: center;   ">
+        <article data-testid="test-profile-card"  class="article">
+            
+            <figure class="figure">
+                <img src="https://i.pinimg.com/1200x/eb/22/45/eb2245dd3cbc876be09f073bea331d46.jpg" alt="profile-avatar" class="avatar" data-testid="test-user-avatar">
+            </figure>
+            
+            <div>
+            <h2 aria-label="profile-name" data-testid="test-user-name" class="name">Yakub Roimot Omotara(Royam)</h2>
+            <p class="bio" data-testid="test-user-bio">Frontend Developer</p>
+            <p class="bio" data-testid="test-user-bio">Dedicated to improving daily in frontend development and creating user-freindly digital experiences</p>
+            <p class="bio" data-testid="test-user-bio">Connect with  me on my socials:</p>
+            <nav style="text-align: center; padding-bottom: 10px;" data-test-id="test-user-social-links">
+             <a data-testid="test-user-social-github" target="_blank" rel="noopener noreferrer" class="social" href="https://www.github.com/Folakl"><ion-icon name="logo-github"></ion-icon></a>
+             <a data-testid="test-user-social-linkedin" target="_blank" rel="noopener noreferrer"  class="social" href="https://www.linkedin.com/in/roimot-omotara-yakub"><ion-icon name="logo-linkedin"></ion-icon></a>
+             <a data-testid="test-user-social-instagram" target="_blank" rel="noopener noreferrer"  class="social" href="https://www.instagram.com/royam_tara"><ion-icon name="logo-instagram"></ion-icon></a>
+            </nav>
+                        
+           <hr class="separator">
+            <section class="section">
+                <h3 >Hobbies</h3>
+                <ul class="list" >
+                    <li data-testid="test-user-hobbies" class="list-items">Coding</li>
+                    <li  data-testid="test-user-hobbies"  class="list-items">Cooking</li>
+                    <li   data-testid="test-user-hobbies" class="list-items">Journaling</li>
+                    <li  data-testid="test-user-hobbies"  class="list-items">Productivity</li>
+                </ul>
+            </section>
+            <hr class="separator">
+            <section class="section" data-test-id="test-user-dislikes">
+                <h3>Dislikes</h3>
+                <ul  class="list">
+                    <li data-testid="test-user-dislikes" class="list-items">Reptiles</li>
+                    <li data-testid="test-user-dislikes" class="list-items">Manipulation</li>
+                    <li data-testid="test-user-dislikes" class="list-items">Slow Network</li>
+                    <li data-testid="test-user-dislikes" class="list-items">Louds crowds or Drama</li>
+                    <li data-testid="test-user-dislikes" class="list-items">Distractions</li>
+                </ul>
+            </section> 
+            <h4 data-testid="test-user-time"  class="time" >Time in ms: <span id="timeMs"></span> </h4>
+        
+        
+            </div>
+        
+
+    
+        </article>
+        <script src="./profile.js"></script>
+    </body>
+    </html>
