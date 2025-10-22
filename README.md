@@ -1,90 +1,126 @@
-Profile Card Project README
-
+🌿 Profile & Multi-Page Internship Project
 Introduction
 
-This project is a personal profile card created using HTML, CSS, and JavaScript. It displays an avatar via URL, user information, hobbies, dislikes, and a live timestamp in milliseconds.
+This project is a multi-page web application built using HTML, CSS, and JavaScript.
+It includes a Profile page, an About Me page, and a Contact page — all styled with a single shared stylesheet and powered by one JavaScript file.
 
-Prerequisites
+The project showcases practical frontend development skills such as interactivity, input validation, and responsive design.
 
-Web browser (Chrome, Firefox, etc.)
+🧩 Prerequisites
 
-Code editor (VS Code, etc.)
+Modern web browser (Chrome, Firefox, Edge, etc.)
 
-How to Run Locally
+Code editor (e.g. VS Code)
+
+⚙️ How to Run Locally
 
 Download or Clone the Project
 
 git clone <repository-url>
 
+
 Or manually download the ZIP file and extract it.
 
 Open the Project Folder
-Open the folder in your code editor.
+Navigate to the folder in your code editor.
 
-Open HTML File in Browser
-Locate the main HTML file (e.g. index.html).
+Open the Main HTML File
+Locate index.html and open it directly in your browser.
 
-Right-click and select Open with Browser, or
+Right-click → Open with Browser
 
-Drag and drop the file into your browser.
+or drag and drop the file into your browser window.
 
-Project Structure
-
+🗂️ Project Structure
 project-folder/
-│── index.html
-│── style.css
-│── profile.js
+│── index.html       # Main Profile Page
+│── About.html       # About Me Page
+│── Contact.html     # Contact Form Page
+│── style.css        # Single stylesheet for all pages
+│── profile.js       # Shared JavaScript file for all pages
+│── README.md
 
-Features
+✨ Features
+🏠 Profile Page (index.html)
 
-Avatar image loaded via URL
+Displays avatar via URL
 
-User name, bio, hobbies, and dislikes
+Shows user information, hobbies, dislikes, and a live timestamp
 
-Social media links with icons
+Includes navigation links to the About and Contact pages
 
-Live updating milliseconds timestamp using JavaScript
+Fully responsive layout
 
-Responsive design using media queries
+👩‍💻 About Me Page (About.html)
 
-How It Works
+Organized into 5 sections:
 
-The project runs entirely in the browser. The JavaScript file updates the time display every second using setInterval() and Date.now().
+Bio – Brief introduction
 
-Notes
+Goals – Learning and career ambitions
+
+Areas of Low Confidence – Areas to improve
+
+Note to Future Self – Motivational message
+
+Extra Thoughts – Personal insights
+
+💌 Contact Page (Contact.html)
+
+Functional contact form with validation for:
+
+Full name
+
+Email
+
+Subject
+
+Message
+
+Inline error messages for invalid inputs
+
+Displays a success toast when submitted correctly
+
+Toast Function Example (profile.js):
+
+function showToast() {
+  const toast = document.getElementById("toast");
+  toast.classList.add("show");
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
+
+🧠 How It Works
+
+The Profile page dynamically displays time using JavaScript.
+
+The Contact page validates form inputs and triggers a success toast message on valid submission.
+
+The About Me page presents structured personal content with accessible data-test attributes for easy testing.
+
+🌈 Accessibility
+
+All interactive elements (inputs, buttons, links) are keyboard accessible.
+
+Visible focus styles for better usability.
+
+data-testid attributes included for automated testing and accessibility support.
+
+💅 Notes
+
+Only one CSS and one JavaScript file are shared across all pages.
 
 Avatar and icons are loaded via external URLs (no local image folder).
 
+Works best on modern browsers with internet access for external resources.
 
-Best viewed in a modern browser.
+👩‍💻 Author
 
-Run Locally
-
-Clone or download this repository.
-
-Open the index.html file directly in your browser.
-
-Accessibility
-
-All interactive elements are keyboard accessible.
-
-Visible focus styles are applied to links and buttons.
-
-Credits
-
-Avatar image sourced via URL.
-
-Icons provided using external icon library (e.g., Ionicons).
-
-Author
-
-Created by a Frontend Developer focusing on clean UI and accessibility.
-
-Ensure an active internet connection to load avatar and icons.
-
-Ensure internet connection if using avatar URL images.
+Name: Yakub Roimot Omotara
+Role: Frontend Developer
+Goal: Building clean, accessible, and responsive interfaces while growing into a successful full-stack developer.
 
 
 
-Specify your license here.
 

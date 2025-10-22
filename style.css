@@ -4,13 +4,33 @@
         box-sizing: border-box;
     }
     body{
-     display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
+    padding-top: 40px;
+    margin-bottom: 40px;
+       gap:10px;
+    margin-top: 10px;
     
     }
+    .nav{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        
+    }
+    .navbtn{
+        width: fit-content;
+        padding: 10px;
+        background-color: rgb(82, 9, 9);
+        border: none;
+        font-weight: bolder;
+        border-radius: 10px;
+    }
+    a{
+    text-decoration: none;
+    color: white;
 
+}
     .article{
         border:5px solid rgb(82, 9, 9); 
         width: 350px;
@@ -88,7 +108,7 @@
           padding-left: 5px;
           padding-bottom: 5px;
     }
-   @media (min-width: 1200px) {
+   @media (min-width: 700px) {
     .article {
         display: flex;
         width: 700px; 
@@ -105,4 +125,195 @@
         flex: 2; 
         padding: 20px;
     }
+}
+ /* contact css */
+
+.contactbody{
+     background-color: rgb(82, 9, 9);
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+       gap:10px;
+    margin-top: 10px;
+    
+    
+
+}
+ .contactnavbtn{
+        width: fit-content;
+        padding: 10px;
+        background-color: white;
+        color: rgb(82, 9, 9);
+        border: none;
+        font-weight: bolder;
+        border-radius: 10px;
+    }
+
+.Getintouch{
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: black;
+}
+.card{
+   background-color: white;
+  color:rgb(82, 9, 9);  
+  width: 350px;
+  padding:40px;
+  border-radius: 2%;
+  height: auto;
+}
+span{
+    color:red
+}
+input,textarea{
+  width:280px;
+ height: auto;
+ border: none;
+ border-bottom: 2px solid rgb(82, 9, 9);
+ outline: none;
+ 
+}
+textarea{
+ height: 50px;
+}
+
+button{
+font-style: oblique;
+width: fit-content;
+padding: 10px;
+background-color: rgb(82, 9, 9);
+border: rgb(82, 9, 9);
+border-radius: 5px;
+cursor: pointer;
+color: white;
+
+}
+
+#toast{
+    visibility: hidden;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left:51%;
+    color: rgb(82, 9, 9);
+    height: 120px; 
+    top: 80%;
+    font-size: 19px;
+    opacity: 0;
+    transition: opacity 0.5s ease bottom 0.5s ease;
+
+}
+
+#toast.show{
+    visibility: visible;
+    opacity:1;
+    transform: translateX(-30%);
+}
+
+@media (min-width: 700px) {
+.card{
+  background-color: white;
+  color:rgb(82, 9, 9)   ;  
+  width: 400px;
+  padding:40px;
+  border-radius: 2%;
+  height: auto;
+  
+}
+input,textarea{
+ width:350px;
+ height: auto;
+ border: none;
+ border-bottom: 2px solid rgb(82, 9, 9);
+ outline: none;
+ 
+}
+    #toast{
+    visibility: hidden;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left:51%;
+    color: rgb(82, 9, 9);
+    height: 120px; 
+    top: 95%;
+    font-size: 19px;
+    opacity: 0;
+    transition: opacity 0.5s ease bottom 0.5s ease;
+
+}
+}
+
+/* About css */
+.aboutbody{
+    background-color: rgb(82, 9, 9);
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+       gap:10px;
+    margin-top: 10px;
+
+   
+}
+    .aboutnavbtn{
+            width: fit-content;
+            padding: 10px;
+            background-color: white;
+            color: rgb(82, 9, 9);
+            border: none;
+            font-weight: bolder;
+            border-radius: 10px;
+        }
+main{
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.head{
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+section{
+    padding: 20px;
+    width: auto;
+    box-shadow: inset;
+    height: auto;
+    margin:20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+section:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+.name{
+    font-weight: bolder;
+    color:black;
+    
+}
+.subject{
+    color:rgb(82, 9, 9);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+@media (min-width: 700px) {
+    main{
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+}
+    
 }
